@@ -1,0 +1,40 @@
+.box{
+    // background: #000;
+    margin: 0;
+    min-height: 60vh;
+    .box1{
+        width: 90vw;
+        // background-color: red;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        .box2{
+            display: flex;
+            width: 20rem;
+            height: 15rem;
+            background-color: wheat;
+            align-items: center;
+            justify-content: space-around;
+            margin: .5rem .47rem;
+            // border-radius: 15px;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .box1{
+        width: 100vw;
+        margin: 0;
+    }
+    .box2{
+        width: 20rem;
+        // margin: .5rem .5rem;
+        margin: 0;
+        height: 12rem;
+    }
+}
+.galleryc{
+    position: relative;
+    z-index: 3;
+}

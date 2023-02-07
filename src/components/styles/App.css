@@ -1,0 +1,433 @@
+.prenav {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#88cb88), to(#105a10));
+  background-image: linear-gradient(#88cb88, #105a10);
+  min-height: 10vh;
+}
+
+.prenav .pre {
+  width: 33vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prenav .pre img {
+  width: 40%;
+  min-height: 40px;
+}
+
+.prenav .pre h1 {
+  font-weight: 900;
+  color: #eccc15;
+  text-shadow: 2px 2px #cf8b8b;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.prenav .pre h1 span {
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+
+.prenav .pre p {
+  color: white;
+  font-size: 1rem;
+}
+
+.prenav .pre p span {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .prenav .pre h1 {
+    font-size: 1rem;
+  }
+  .prenav .pre h1 span {
+    font-size: .5rem;
+  }
+  .prenav .pre:nth-child(1) img {
+    width: 75%;
+  }
+  .prenav .pre:nth-child(3) {
+    display: none;
+  }
+}
+
+.front {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50vw;
+  position: relative;
+  top: 0;
+  margin: auto;
+  border-radius: 24px;
+}
+
+.front:hover {
+  background: rgba(255, 255, 255, 0.289);
+  cursor: pointer;
+}
+
+.foot {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#88cb88), to(#105a10));
+  background-image: linear-gradient(#88cb88, #105a10);
+}
+
+.foot li {
+  list-style: none;
+  color: red;
+}
+
+.foot li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.boxarea {
+  font-family: cursive;
+  color: #1b0909;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #CFFF8D;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.boxarea .singlebox {
+  position: relative;
+  background: #B8E8FC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  height: auto;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.boxarea .singlebox:hover {
+  background-color: #A8E890;
+  cursor: pointer;
+}
+
+.boxarea .singlebox .imgarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 7rem;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #04342a;
+  border-radius: 50%;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.boxarea .singlebox .imgarea img {
+  height: 80px;
+  height: 80px;
+}
+
+.boxarea .imgtxt span strong {
+  margin: .3rem 0;
+  display: inline-block;
+}
+
+.card11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background-image: linear-gradient(white, black);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card11 .box1 {
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #EEF1FF;
+}
+
+.card11 .box1 .cardtop {
+  font-family: cursive;
+}
+
+.card11 .box1 .cardtop h5 {
+  text-align: center;
+  margin: .6rem;
+}
+
+.card11 .box1 .cardtop p {
+  padding-left: .4rem;
+  color: #292828;
+  font-weight: 50;
+  text-align: center;
+}
+
+.card11 .box1 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card11 .box1 .btn .abc {
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.card11 .box1 .btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #82b6d8;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+.card11 .box1:hover {
+  cursor: pointer;
+  background-color: #dee2f4;
+}
+
+.card11 .box2 {
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #CFFF8D;
+}
+
+.card11 .box2 .cardtop {
+  font-family: cursive;
+}
+
+.card11 .box2 .cardtop h5 {
+  text-align: center;
+  margin: .6rem;
+}
+
+.card11 .box2 .cardtop p {
+  padding-left: .4rem;
+  color: #292828;
+  font-weight: 50;
+  text-align: center;
+}
+
+.card11 .box2 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card11 .box2 .btn .abc {
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.card11 .box2 .btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #82b6d8;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+.card11 .box2:hover {
+  cursor: pointer;
+  background-color: #bef077;
+}
+
+.card11 .box3 {
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #f9c84b;
+}
+
+.card11 .box3 .cardtop {
+  font-family: cursive;
+}
+
+.card11 .box3 .cardtop h5 {
+  text-align: center;
+  margin: .6rem;
+}
+
+.card11 .box3 .cardtop p {
+  padding-left: .4rem;
+  color: #292828;
+  font-weight: 50;
+  text-align: center;
+}
+
+.card11 .box3 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card11 .box3 .btn .abc {
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.card11 .box3 .btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #82b6d8;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+.card11 .box3:hover {
+  cursor: pointer;
+  background-color: #FFCB42;
+}
+
+.card11 .box4 {
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #DEB6AB;
+}
+
+.card11 .box4 .cardtop {
+  font-family: cursive;
+}
+
+.card11 .box4 .cardtop h5 {
+  text-align: center;
+  margin: .6rem;
+}
+
+.card11 .box4 .cardtop p {
+  padding-left: .4rem;
+  color: #292828;
+  font-weight: 50;
+  text-align: center;
+}
+
+.card11 .box4 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card11 .box4 .btn .abc {
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.card11 .box4 .btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #82b6d8;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+.card11 .box4:hover {
+  cursor: pointer;
+  background-color: #d89c8c;
+}
+
+.nostyle {
+  text-decoration: none !important;
+  color: #2525d6;
+  display: inline !important;
+}
+
+.welcome, .mainlogin {
+  background: #fdf4e9;
+}
+
+.rstyle {
+  text-decoration: none;
+}
+/*# sourceMappingURL=App.css.map */
