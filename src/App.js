@@ -14,7 +14,7 @@ import StudentRegister from "./components/Home/login/StudentRegister";
 import StudentLogin from "./components/Home/login/StudentLogin";
 import AddNewImg from "./components/Admin/AddNewImg";
 import News from "./components/Admin/News&event";
-import AddFaq from "./components/Admin/AddFaq";
+// import AddFaq from "./components/Admin/AddFaq";
 import FaqSection from "./components/Admin/FaqSection";
 import StudentList from "./components/Admin/Studentlist"
 import Timetable from "./components/Timetable/Timetable";
