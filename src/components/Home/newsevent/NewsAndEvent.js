@@ -18,7 +18,7 @@ const NewsAndEvent = () => {
     <>
     {loading && <Loader/>}
     {error && <Error error={"error while loading events :" + error} />}
-    <h4 className="text-center text-danger">Our Student</h4>
+    <h4 className="text-center text-success">Our Student</h4>
       <ul className="honeycomb">
        {allimages && allimages.data.map(img => {return(
         <li className="honeycomb-cell" id={img._id}>

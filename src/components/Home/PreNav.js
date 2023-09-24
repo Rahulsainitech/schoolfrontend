@@ -9,15 +9,15 @@ const PreNav = () => {
           <div className="pre col-3 col-md-3">
             <img src={Logo} alt="logo" style={{height:"140px",width:'150px'}} />
           </div>
-          <div className="pre col-9 col-md-6">
-            <h1 className="text-center">
-              Sarvodaya Public School
+          <div className="pre col-md-9 col-9">
+            <h2 className="text-center">
+              Sunrise Public Sr. Secondary School
               <br />{" "}
               <span className="display-4 col-12 text-center">
                 {" "}
                 We believe in excellence
               </span>
-            </h1>
+            </h2>
           </div>
           <div className="pre col-md-3">
             <p>

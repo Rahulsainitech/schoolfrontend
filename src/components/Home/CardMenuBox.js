@@ -8,8 +8,7 @@ const CardMenuBox = () => {
     <div class="box1">
         <div class="cardtop">
             <h5>School info</h5>
-            <p>Sarvodaya Public School established in year 2000.We provide excellence learning path for every
-                student.</p>
+            <p>Sunrise Public Sr. Secondary School established in year 2000.We provide excellence learning....</p>
         </div>
         <div class="btn">
             <NavLink to="/about"><button>Read More</button></NavLink>
@@ -17,7 +16,7 @@ const CardMenuBox = () => {
     </div>
     <div class="box2">
         <div class="cardtop">
-            <h5 className='py-2'>time table</h5>
+            <h5 className='py-2'>Time-table</h5>
             <p>Check the latest timetable of all the classes </p>
         </div>
         <div class="btn">

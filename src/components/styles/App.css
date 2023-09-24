@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .prenav {
   top: 0;
   display: -webkit-box;
@@ -33,14 +38,14 @@
   min-height: 40px;
 }
 
-.prenav .pre h1 {
+.prenav .pre h2 {
   font-weight: 900;
   color: #eccc15;
   text-shadow: 2px 2px #cf8b8b;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.prenav .pre h1 span {
+.prenav .pre h2 span {
   font-size: 1.3rem;
   font-family: cursive;
 }
@@ -70,7 +75,7 @@
 }
 
 .front {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(248, 247, 247, 0.2);
   width: 50vw;
   position: relative;
   top: 0;
@@ -187,8 +192,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-  background-image: linear-gradient(white, black);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#599a59), to(#033d19));
+  background-image: linear-gradient(white, #599a59, #033d19);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -423,8 +428,12 @@
   display: inline !important;
 }
 
-.welcome, .mainlogin {
-  background: #fdf4e9;
+.mainlogin {
+  background: #fcf3e9;
+}
+
+.welcome {
+  background: whitesmoke;
 }
 
 .rstyle {
