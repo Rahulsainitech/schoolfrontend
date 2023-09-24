@@ -24,14 +24,14 @@ import AllGallery from "./components/Admin/AllImages";
 import AdminGallery from "./components/Admin/AdminGallery";
 import SetTimetable from "./components/Admin/SetTimetable"
 import Onlinefee from "./components/Home/feeSection/Onlinefee";
-
-
+import  Spsss from './spsss.xml'
 const App = () => {
   return (
     <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/spsss" element={<Spsss />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/admissions" element={<About />} />
