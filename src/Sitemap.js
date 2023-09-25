@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import React from "react";
+
+const Sitemap = () => {
+  const generateXml = () => {
+    const xml = `
+        <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://sarvodya-public-school-xz.netlify.app</loc>
@@ -20,5 +25,16 @@
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
-   <!-- Add more URLs for other pages on your website -->
-</urlset>
+   {/* <!-- Add more URLs for other pages on your website --> */}
+</urlset>`;
+    return xml;
+  };
+  return <>
+    <h6>Sitemap</h6>
+      <pre>
+        <code>{generateXml()}</code>
+      </pre>
+  </>;
+};
+
+export default Sitemap;

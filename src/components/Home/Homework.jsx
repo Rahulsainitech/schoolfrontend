@@ -45,7 +45,7 @@ const Home = () => {
       <CardMenuBox />
       <div className="welcome">
         <h4 className="text-center p-3 text-success  text-bg-light">
-          Welcome to Sunrise Sr. Secondary School
+          Welcome to Sunrise Sr. Secondary School 
         </h4>
         <Row
           style={{
@@ -104,6 +104,7 @@ const Home = () => {
                   <Card.Body>
                     <Card.Title className="text-center">Principal Message</Card.Title>
                     <Card.Text>
+                   
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -160,7 +161,7 @@ const Home = () => {
             </Row>
           </Col> */}
           <Col xs={12} md={3}>
-            <h5 className="text-center bg-info py-2">News and Event</h5>
+            <h5 className="text-center bg-success py-2">News and Event</h5>
             <Accordion
               defaultActiveKey={["0"]}
               style={{
