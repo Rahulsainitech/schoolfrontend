@@ -25,6 +25,8 @@ import AdminGallery from "./components/Admin/AdminGallery";
 import SetTimetable from "./components/Admin/SetTimetable"
 import Onlinefee from "./components/Home/feeSection/Onlinefee";
 import Sitemap from "./Sitemap";
+import Principal from "./components/About/Principal";
+import Director from "./components/About/Director";
 const App = () => {
   return (
     <>
@@ -33,7 +35,9 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Sitemap" element={<Sitemap />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about/school" element={<About />} />
+        <Route path="/about/principal" element={<Principal/>} />
+        <Route path="/about/director" element={<Director />} />
         <Route path="/admissions" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/mainlogin" element={<MainLogin />} />

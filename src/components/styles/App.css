@@ -50,12 +50,12 @@ body {
   font-family: cursive;
 }
 
-.prenav .pre p {
+.prenav .pre address {
   color: white;
   font-size: 1rem;
 }
 
-.prenav .pre p span {
+.prenav .pre address span {
   font-size: 1rem;
 }
 
@@ -116,7 +116,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #CFFF8D;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

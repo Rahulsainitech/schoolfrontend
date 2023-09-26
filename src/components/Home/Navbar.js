@@ -29,24 +29,30 @@ const Navbar1 = () => {
               <NavDropdown title={"About"} id="basic-nav-dropdown">
                 <NavDropdown.Item className="m-0">
                   {" "}
-                  <NavLink to="/about" className="nav-link">
+                  <NavLink to="/about/school" className="nav-link">
                   <FaSchool/>&nbsp;School
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  {" "}
+                  <NavLink to="/about/director" className="nav-link">
+                    Director
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  {" "}
+                  <NavLink to="/about/principal" className="nav-link">
+                    Principal
                   </NavLink>
                 </NavDropdown.Item>
                 {/* <hr/> */}
                 <NavDropdown.Item>
                   {" "}
-                  <NavLink to="/about" className="nav-link">
+                  <NavLink to="/about/teachers" className="nav-link">
                     Teachers
                   </NavLink>
                 </NavDropdown.Item>
                 {/* <hr/> */}
-                <NavDropdown.Item>
-                  {" "}
-                  <NavLink to="/about" className="nav-link">
-                    Principal
-                  </NavLink>
-                </NavDropdown.Item>
               </NavDropdown>
               <NavLink to="/gallery" className="nav-link">
               <RiGalleryLine/>&nbsp;Gallery

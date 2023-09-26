@@ -20,19 +20,19 @@ const PreNav = () => {
             </h2>
           </div>
           <div className="pre col-md-3">
-            <p>
+            <address>
               <span>
                 <i className="fas fa-phone-square-alt"></i>Contact us
               </span>
               <br />
-              Firozepur Jhirka
+              Agon,Firozepur Jhirka
               <br />
-              Mewat,Haryana
+              Mewat,Haryana,122104
               <br />
-              Phone:989448478
+              Phone:9991304077
               <br />
-              Email:rahul@gmail.com
-            </p>
+              Email:spsssagon@gmail.com
+            </address>
           </div>
         </div>
       

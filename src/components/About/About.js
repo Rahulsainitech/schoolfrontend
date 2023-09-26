@@ -19,7 +19,7 @@ const About = () => {
             <Card style={{background:"#CFFF8D" }}>
               <Card.Img
                 variant="top"
-                src="https://res.cloudinary.com/geeta9812/image/upload/v1667024247/gvxng6w8qyemxqe4599d.jpg"
+                src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
                 className="py-2"
                 style={{
                       width: "14rem",
@@ -32,7 +32,7 @@ const About = () => {
                         border:'1px solid green',
                     }}
               />
-              <Card.Title className="text-center text-success py-2">Rahul Saini</Card.Title>
+              <Card.Title className="text-center text-success py-2">Zahid Khan</Card.Title>
               </Card>
             </Col>
             <Col xs={9}>
