@@ -1,6 +1,49 @@
+.princ-msg {
+  background-color: #FFC436;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.facility {
+  background: #004225;
+  border: 1px solid green;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  color: white;
+}
+
+.facility hr {
+  border: 1px solid green;
+}
+
+.facility .f-card {
+  color: black;
+}
+
+.facility .f-card:hover {
+  color: white;
+  background: #004225;
+  cursor: pointer;
+}
+
+.whatapp {
+  position: absolute;
+}
+
+.whatapp .fab {
+  color: white;
+  background: #77ec77;
+  border-radius: 50%;
+  padding: .3rem;
+  font-size: 2.5rem;
+  z-index: 2;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
 }
 
 .prenav {
@@ -106,7 +149,7 @@ body {
 
 .boxarea {
   font-family: cursive;
-  color: #1b0909;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +165,7 @@ body {
 
 .boxarea .singlebox {
   position: relative;
-  background: #B8E8FC;
+  background: #004225;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +189,8 @@ body {
 }
 
 .boxarea .singlebox:hover {
-  background-color: #A8E890;
+  background-color: #FFB000;
+  color: black;
   cursor: pointer;
 }
 
@@ -163,7 +207,7 @@ body {
   font-size: 7rem;
   width: 80px;
   height: 80px;
-  border: 2px solid #04342a;
+  border: 2px solid white;
   border-radius: 50%;
   padding: 20px;
   background-size: cover;

@@ -5,24 +5,23 @@ const Director = () => {
   return (
     <>
       <div>
-        <Container>
+        <Container className="princ-msg">
           <Row>
             <Col style={{ margin: "auto" }}>
-              <Card style={{ background: "#CFFF8D" }}>
+              <Card style={{ background: "#FFA41B" }}>
                 <Card.Img
                   variant="top"
                   src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
-                  className="py-2"
                   style={{
-                    width: "14rem",
-                    height: "14rem",
+                    width: "11rem",
+                    height: "11rem",
                     margin: "auto",
-                    clipPath:
-                      "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
-                    padding: "5px",
+                    padding: "3px",
+                    borderRadius: "50%",
                     cursor: "pointer",
-                    border: "1px solid green",
+                    border: "3px solid green",
                   }}
+                  className="my-4"
                 />
                 <Card.Title className="text-center text-success py-2">
                   Majid khan
@@ -44,12 +43,18 @@ const Director = () => {
                 school, we think of education as a team effort between teachers,
                 parents, and students. Teachers and parents work together to
                 support the child's dreams and help them make a positive
-                difference in their community and the world. At Spss, we create a
-                friendly and fair place where boys and girls learn together and
-                treat each other nicely. We don't treat anyone differently
+                difference in their community and the world. At Spss, we create
+                a friendly and fair place where boys and girls learn together
+                and treat each other nicely. We don't treat anyone differently
                 because of their gender, beliefs, or where they come from. We
                 want to congratulate and wish all our students and families the
-                best.
+                best.These experiences help our children prepare for the future
+                and find their place in the world. Our school's main goal is to
+                help children become valuable members of society. We do this by
+                getting involved in the community and sharing our joy with
+                others. Let's work together to ensure our children grow up to be
+                open-minded, aware, and thoughtful young people who can make the
+                world a better place. Let's all enjoy it together.
               </Card.Text>
             </Col>
           </Row>

@@ -5,14 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
 import PreNav from "./PreNav";
-import "../styles/App.css"
+import "../styles/App.css";
 import { AiFillHome } from "react-icons/ai";
-import {FaSchool} from "react-icons/fa";
+import { FaSchool } from "react-icons/fa";
 import { RiGalleryLine } from "react-icons/ri";
-import {GoSignIn} from "react-icons/go";
-import {MdOutlineContactMail} from "react-icons/md";
-import {RiAdminLine} from "react-icons/ri"
-
+import { GoSignIn } from "react-icons/go";
+import { MdOutlineContactMail } from "react-icons/md";
+import { RiAdminLine } from "react-icons/ri";
 
 const Navbar1 = () => {
   return (
@@ -24,13 +23,14 @@ const Navbar1 = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavLink to="/" className="nav-link">
-               <AiFillHome/> &nbsp; Home
+                <AiFillHome /> &nbsp; Home
               </NavLink>
               <NavDropdown title={"About"} id="basic-nav-dropdown">
                 <NavDropdown.Item className="m-0">
                   {" "}
                   <NavLink to="/about/school" className="nav-link">
-                  <FaSchool/>&nbsp;School
+                    <FaSchool />
+                    &nbsp;School
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
@@ -54,17 +54,34 @@ const Navbar1 = () => {
                 </NavDropdown.Item>
                 {/* <hr/> */}
               </NavDropdown>
-              <NavLink to="/gallery" className="nav-link">
-              <RiGalleryLine/>&nbsp;Gallery
+              <NavDropdown title={"Gallery"} id="basic-nav-dropdown">
+                <NavDropdown.Item className="m-0">
+                  {" "}
+                  <NavLink to="/gallery" className="nav-link">
+                    <RiGalleryLine />
+                    &nbsp;Photos
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink to="/gallery" className="nav-link">
+                    <RiGalleryLine />
+                    &nbsp;Video
+                  </NavLink>
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <NavLink to="/contact" className="nav-link">
+                <MdOutlineContactMail />
+                &nbsp;Contact
               </NavLink>
               <NavLink to="/contact" className="nav-link">
-                <MdOutlineContactMail/>&nbsp;Contact
+                &nbsp;Admissions
               </NavLink>
               <NavLink to="/mainlogin" className="nav-link">
-               <GoSignIn/> login
+                <GoSignIn /> login
               </NavLink>
               <NavLink to="/admin" className="nav-link">
-               <RiAdminLine/> Admin
+                <RiAdminLine /> Admin
               </NavLink>
             </Nav>
           </Navbar.Collapse>

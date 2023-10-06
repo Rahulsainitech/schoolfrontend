@@ -5,11 +5,28 @@ import Row from "react-bootstrap/esm/Row";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/esm/Button";
+import {Helmet} from "react-helmet";
 
 const Contact = () => {
   return (
     <Container>
     <h3 className="text-center py-4">Contact Us</h3>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Us</title>
+        <meta
+          name="description"
+          content="SUNRISE PUBLIC HIGH SCHOOL,Agon,F.P.JHIRKA "
+        />
+        <meta
+          name="keywords"
+          content="Sunrise Public Sr. Secondary School Firozepur Jhirka,Mewat schools,CBSE Affiliated School,Science,Art,Commerce,Private School,Highly Qualified Teacher,Admissions,Award-Winning School"
+        />
+        <link
+          rel="canonical"
+          href="https://sunrise-public-sr-secondary-school.netlify.app/contact"
+        />
+      </Helmet>
       <Row style={{"minHeight":"60vh"}}>
         <Col xs={12} md={6}>
           <Card >

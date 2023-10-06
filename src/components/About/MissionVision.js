@@ -6,11 +6,11 @@ import { GiBullseye } from "react-icons/gi";
 
 const MissionVision = () => {
   return (
-    <div style={{ background: "#CFFF8D" }} className="py-3">
-      <h4 className="text-center text-success">Acknoweledge</h4>
+    <div style={{ background: "#34A853" }} className="py-3">
+      <h4 className="text-center text-white">Acknoweledge</h4>
       <div className="boxarea">
         <div className="singlebox">
-          <div className="imgarea">
+          <div className="imgarea py-2">
             <GiBullseye />
           </div>
           <div className="imgtxt">
@@ -19,10 +19,10 @@ const MissionVision = () => {
             </span>
             <p>
               {" "}
-              Our mission is to nurture our students to realize their own
-              potential and identify and achieve their goals in an environment
-              of rich tutelage, joyful and harmonious learning while keeping
-              alive the spirit of togetherness and ‘Service Before Self’.
+              Our Mision is to help our students discover their abilities and
+              reach their dreams in a happy, supportive learning atmosphere. We
+              promote unity and the idea of helping others as we guide them on
+              their journey towards success.We also emphasize the importance of helping others.
             </p>
           </div>
         </div>
@@ -39,8 +39,8 @@ const MissionVision = () => {
               nurturing students' potential. We boast fully-equipped
               laboratories that foster hands-on learning. Our consistent track
               record of producing outstanding results is a testament to our
-              commitment to academic excellence,ensuring students are well-prepared for the challenges of the
-              future.
+              commitment to academic excellence,ensuring students are
+              well-prepared for the challenges of the future.
             </p>
           </div>
         </div>
@@ -53,11 +53,11 @@ const MissionVision = () => {
               <strong>Our Vision</strong>
             </span>
             <p>
-              Our vision is rooted in a strong commitment to societal
-              welfare. We take pride in our students who actively contribute to
-              fields like engineering, medical science, and research. We aim to
-              instill in them a sense of responsibility and purpose, inspiring
-              them to make meaningful and positive impacts on society.
+              Our vision is rooted in a strong commitment to societal welfare.
+              We take pride in our students who actively contribute to fields
+              like engineering, medical science, and research. We aim to instill
+              in them a sense of responsibility and purpose, inspiring them to
+              make meaningful and positive impacts on society.
             </p>
           </div>
         </div>

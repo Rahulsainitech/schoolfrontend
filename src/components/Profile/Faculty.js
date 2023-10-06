@@ -8,20 +8,20 @@ const Faculty = () => {
   const { id } = useParams();
   const userState = useSelector((state) => state.getAllUserReducer);
   const [faculty, setFaculty] = useState("");
-  const { users, error, loading } = userState;
+  const { users} = userState;
   console.log(users, "djfdfjk");
 
   useEffect(() => {
     for (let i in users) {
-      console.log(i, "i");
+      // console.log(i, "i");
       if (users[i]._id === id) {
         // alert("kk")
-        console.log(i, "for loop");
+        // console.log(i, "for loop");
         setFaculty(users[i]);
       }
-      console.log(faculty, "dfdfdfdfd");
+      // console.log(faculty, "dfdfdfdfd");
     }
-  }, [users]);
+  }, [users,id]);
 
   return (
     <Container>
@@ -42,7 +42,6 @@ const Faculty = () => {
                           overflow: "hidden",
                           borderRadius: "50%",
                           padding: "5px",
-                          border: "1px solid green",
                           border: "1px solid rgb(200, 206, 200)",
                           boxShadow: "4px 4px rgb(227, 234, 227)"
                         }}

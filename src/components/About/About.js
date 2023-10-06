@@ -1,82 +1,78 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+// import Card from "react-bootstrap/Card";
+// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import image14 from "../img/4.jpg";
 import MissionVision from "./MissionVision";
 import DiamondGallery from "./GalleryDesign/DiamondGallery";
 import Alumani from "../Home/Alumani/Alumani";
+import { Card } from "react-bootstrap";
+import Image4 from "../img/4.jpg";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
-    <div style={{background:"#CFFF8D" }}>
+    <div style={{ background: "#CFFF8D" }}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Spsss</title>
+        <meta
+          name="description"
+          content="SUNRISE PUBLIC HIGH SCHOOL AGON was established in 2004 and it is managed by the Pvt. Unaided. It is located in Rural area. It is located in F.P.JHIRKA block of MEWAT district of HARYANA. The school consists of Grades from 1 to 12. The school is Co-educational and it doesn't have an attached pre-primary section. The school is Not Applicable in nature and is not using school building as a shift-school. Hindi is the medium of instructions in this school. "
+        />
+        <meta
+          name="keywords"
+          content="Sunrise Public Sr. Secondary School Firozepur Jhirka,Mewat schools,CBSE Affiliated School,Science,Art,Commerce,Private School,Highly Qualified Teacher,Admissions,Award-Winning School"
+        />
+        <link
+          rel="canonical"
+          href="https://sunrise-public-sr-secondary-school.netlify.app/about"
+        />
+      </Helmet>
       <div>
         <Container>
-          <Row>
-            <Col style={{margin:"auto"}}>
-            <Card style={{background:"#CFFF8D" }}>
-              <Card.Img
-                variant="top"
-                src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
-                className="py-2"
-                style={{
-                      width: "14rem",
-                      height: "14rem",
-                      margin: "auto",
-                      clipPath:
-                        "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
-                        padding:"5px",
-                        cursor:"pointer",
-                        border:'1px solid green',
-                    }}
-              />
-              <Card.Title className="text-center text-success py-2">Zahid Khan</Card.Title>
-              </Card>
+          <Row className="py-4">
+            <Col md={5} xs={12} className="my-4">
+              <Card.Img src={Image4} />
             </Col>
-            <Col xs={9}>
-              <Card.Title className="text-center text-success p-3">Principal Desk</Card.Title>
-              <Card.Text className="text-start">
-                In a rapidly transforming world, schools have to take upon
-                themselves the responsibility of preparing children to face up
-                to any challenge that the future may throw before them. Learning
-                to work and live together being proactive to enhance the natural
-                environment, respecting multi-culturalism and diverse faiths,
-                strengthening democratic ideals and Aravali Public School has
-                carved a niche for itself for the quality of education it is
-                imparting. We are justifiably proud and hope to live up to the
-                dreams and ideals of our founder honorable Mr. Md. Israil. Our
-                students have plunged themselves into life at school and are
-                constantly in the pursuit of excellence. They continue to give
-                us much joy while embracing the ideals of courage, compassions,
-                resilience and sound ethical values. Participation in ATL
-                Marathon, National Olympiads, CBSE cluster, Inter School
-                competition under GPSC banner were highlight of this academic
-                session. These entire experiences give wings to our children to
-                take their rightful place in the world of tomorrow. The bedrock
-                of our school continues to the drive to nurture children into
-                valuable contributive member of society. To this end, our thrust
-                on specific community outreach initiatives, in addition to our
-                joy of sharing week has increased. Let us join hands to ensure
-                that our children grew up to be open minded, aware, critically
-                analyzing young men and women with a conscience, who can lead
-                our world to a better tomorrow.
-              </Card.Text>
+            <Col md={7} xs={12}>
+              <h5 className="text-center">About Sunrise</h5>
+              <p>
+                <strong>SUNRISE PUBLIC HIGH SCHOOL </strong>AGON was established
+                in 2004 and it is managed by the Pvt. Unaided. It is located in
+                Rural area. It is located in F.P.JHIRKA block of MEWAT district
+                of HARYANA. The school consists of Grades from 1 to 12. The
+                school is Co-educational and it doesn't have an attached
+                pre-primary section. The school is Not Applicable in nature and
+                is not using school building as a shift-school. Hindi is the
+                medium of instructions in this school. This school is
+                approachable by all weather road. In this school academic
+                session starts in April. The school has Private building. It has
+                got 11 classrooms for instructional purposes. All the classrooms
+                are in good condition. It has 2 other rooms for non-teaching
+                activities. The school has a separate room for Head
+                master/Teacher.The school has have electric connection. The
+                school has 7 boys toilet and it is functional. and 3 girls
+                toilet and it is functional. The school has no playground. The
+                school has a library and has 3500 books in its library. The
+                school does not need ramp for disabled children to access
+                classrooms. The school has dedicated computer lab for teaching and learning
+                purposes and all are functional. The school is Not Applicable
+                providing mid-day meal.
+              </p>
             </Col>
           </Row>
         </Container>
       </div>
-      <hr/>
-      <h4 className="text-center text-success faculty py-2">Acknoweldgement</h4>
-      <MissionVision/>
-      <hr/>
-      <h5 className="text-center">Our Alumani</h5>
-      <Alumani/>
-      <hr/>
+      <hr />
+      <MissionVision />
+      <h5 className="text-center my-2">Our Alumani</h5>
+      <Alumani />
+      <hr />
       <Container>
-      <h4 className="text-center text-success faculty py-5">Our Faculties</h4>
-      <DiamondGallery/>
+        <h4 className="text-center text-success faculty py-5">Our Faculties</h4>
+        <DiamondGallery />
       </Container>
     </div>
   );

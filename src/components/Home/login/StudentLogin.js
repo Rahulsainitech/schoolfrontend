@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { loginStudent } from "../../Action/userAction";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
 import { NavLink } from "react-router-dom";
-import Error from "../../Warning/Error";
+// import Error from "../../Warning/Error";
 
 const StudentLogin = () => {
   const dispatch = useDispatch();
-  const loginState = useSelector((state) => state.loginStudentReducer);
+  // const loginState = useSelector((state) => state.loginStudentReducer);
   const [name, setName] = useState("");
   const [regno, setRegno] = useState("");
-  const { error, success, loading } = loginState;
+  // const { error, success, loading } = loginState;
   const loginHandler = (e) => {
     e.preventDefault();
     const user = { name, regno };

@@ -1,31 +1,32 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-
+import Image5 from "../img/5.jpeg";
+import "../styles/App.css";
 const Principal = () => {
   return (
     <>
       <div>
-        <Container>
+        <Container className="princ-msg">
           <Row>
             <Col style={{ margin: "auto" }}>
-              <Card style={{ background: "#CFFF8D" }}>
+              <Card style={{ background: "#FFA41B" }} className="py-4">
                 <Card.Img
                   variant="top"
-                  src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
-                  className="py-2"
+                  src={Image5}
                   style={{
-                    width: "14rem",
-                    height: "14rem",
+                    width: "11rem",
+                    height: "11rem",
                     margin: "auto",
-                    clipPath:
-                      "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
-                    padding: "5px",
+                    padding: "3px",
+                    borderRadius:"50%",
+                    // clipPath:
+                    //   "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
                     cursor: "pointer",
-                    border: "1px solid green",
+                    border: "3px solid green",
                   }}
                 />
                 <Card.Title className="text-center text-success py-2">
-                  Zahid Khan
+                  Jahid Khan
                 </Card.Title>
               </Card>
             </Col>
@@ -39,9 +40,9 @@ const Principal = () => {
                 any challenges they might face in the future. This includes
                 learning to work and live together, taking care of our
                 environment, respecting different cultures and beliefs, and
-                supporting democratic values. Aravali Public School is proud to
+                supporting democratic values. Sunrise Public Sr. Secondary School is proud to
                 provide high-quality education and hopes to fulfill the dreams
-                of our founder, Mr. Md. Israil. Our students are amazing. They
+                of our founder, Mr. Mazid Khan. Our students are amazing. They
                 actively participate in school life and always strive to do
                 their best. They make us proud by showing qualities like
                 bravery, kindness, resilience, and good values. This academic

@@ -4,8 +4,7 @@ import {useDispatch,useSelector} from "react-redux";
 import { getSplImage } from '../../Action/imageAction';
 import Loader from "../../Warning/Loader";
 import Error from "../../Warning/Error";
-
-
+import { Container } from "react-bootstrap";
 const NewsAndEvent = () => {
   const dispatch = useDispatch()
   const userState = useSelector(state=>state.getSplImgReducer)
@@ -15,11 +14,11 @@ const NewsAndEvent = () => {
     dispatch( getSplImage());
   }, [dispatch]);
   return (
-    <>
+    <Container className="homeGallery">
     {loading && <Loader/>}
     {error && <Error error={"error while loading events :" + error} />}
-    <h4 className="text-center text-success">Our Student</h4>
-      <ul className="honeycomb">
+    <h4 className="text-center text-success py-3">Our Student</h4>
+      <ul className="honeycomb ">
        {allimages && allimages.data.map(img => {return(
         <li className="honeycomb-cell" id={img._id}>
           <img className="honeycomb-cell_img" src={img.image} alt={img.category} />
@@ -31,7 +30,7 @@ const NewsAndEvent = () => {
           <dic className="honeycomb-cell_title">School level poster making competition</dic>
         </li>
       </ul>
-    </>
+    </Container>
   );
 };
 

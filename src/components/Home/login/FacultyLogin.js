@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { facultyLogin } from "../../Action/userAction";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
@@ -9,7 +9,7 @@ import {FaUserTie} from "react-icons/fa"
 
 const Login = () => {
   const dispatch = useDispatch();
-  const loginState = useSelector((state) => state.loginFacultyReducer);
+  // const loginState = useSelector((state) => state.loginFacultyReducer);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const { error, success, loading } = loginState;

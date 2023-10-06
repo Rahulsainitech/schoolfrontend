@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-// import image13 from "../img/3.jpg";
-// import image14 from "../img/4.jpg";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -12,30 +8,20 @@ import Accordion from "react-bootstrap/Accordion";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllFaq } from "../Action/faqAction";
 import { getAllNews } from "../Action/newsAction";
-// import {Image} from "react-bootstrap"
 import CardMenuBox from "./CardMenuBox";
 import CarouselFront from "./CarouselFront";
-import { Image } from "react-bootstrap";
 import OurStudent from "./newsevent/NewsAndEvent";
 import { NavLink } from "react-router-dom";
 import MissionVision from "../About/MissionVision";
 import Facilities from "./Facilities/Facilities";
-// import Alumani from "./Alumani/Alumani";
-// import DiamondGallery from "../About/GalleryDesign/DiamondGallery";
-
+import Image5 from "../img/5.jpeg"
+import "../styles/App.css"
 const Home = () => {
-  const [newsData, setNewsdata] = useState({});
-  const [faqData, setFaqdata] = useState({});
   const dispatch = useDispatch();
   const faqState = useSelector((state) => state.getAllFaqReducer);
-  const { allFaqQue, error, loading } = faqState;
-  // setFaqdata(allFaqQue);
+  const { allFaqQue, error, loading } = faqState
   const newsState = useSelector((state) => state.getAllNewsReducer);
   const { allnews } = newsState;
-  // setNewsdata(allnews);
-
-  console.log("all", allnews);
-  console.log("faq", allFaqQue);
   useEffect(() => {
     dispatch(getAllFaq());
     dispatch(getAllNews());
@@ -44,8 +30,8 @@ const Home = () => {
     <div className="welcome">
       <CarouselFront />
       <CardMenuBox />
-      <div className="welcome">
-        <h4 className="text-center p-3 text-success  text-bg-light">
+      <div className="welcome bg-dark">
+        <h4 className="text-center p-3 text-success bg-black text-bg-light">
           Welcome to Sunrise Sr. Secondary School
         </h4>
         <Row
@@ -62,11 +48,11 @@ const Home = () => {
               }}
             >
               <Col xs={10} md={5}>
-                <Card>
+                <Card style={{background:"#FBBC04"}}>
                   <Card.Img
                     style={{
-                      width: "14rem",
-                      height: "14rem",
+                      width: "12rem",
+                      height: "12rem",
                       margin: "auto",
                       clipPath:
                         "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
@@ -74,6 +60,7 @@ const Home = () => {
                       cursor: "pointer",
                       border: "1px solid green",
                     }}
+                    className="my-4"
                     variant="top"
                     src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
                   />
@@ -96,11 +83,11 @@ const Home = () => {
                 </Card>
               </Col>
               <Col xs={10} md={5}>
-                <Card>
+                <Card style={{background:"#E37400"}}>
                   <Card.Img
                     style={{
-                      width: "14rem",
-                      height: "14rem",
+                      width: "12rem",
+                      height: "12rem",
                       margin: "auto",
                       clipPath:
                         "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
@@ -109,7 +96,8 @@ const Home = () => {
                       border: "1px solid green",
                     }}
                     variant="top"
-                    src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
+                    className="my-4"
+                    src={Image5}
                   />
                   <Card.Body>
                     <Card.Title className="text-center">
@@ -164,9 +152,9 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-      {/* <Facilities/> */}
-      <div>
-        <Container style={{ marginTop: "9rem" }}>
+      <Facilities/>
+      <div >
+        <Container className="my-2">
           <Row>
             <Col xs={12} md={6}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/P_NPNqJnbos?si=7jj-UUuK_CBhn1t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -96,13 +96,13 @@ const Footernav = () => {
                   className="mt-4"
                 >
                   <span>
-                    <SiFacebook />
+                    <a href="https://www.facebook.com/p/Sunrise-Public-Sr-Sec-School-Agon-100069866379763/"><SiFacebook/></a>
                   </span>
                   <span>
                     <GrInstagram />
                   </span>
                   <span>
-                    <ImWhatsapp />
+                    <a href="https://wa.me/+917056305594?text='Hi,like to talk with you'"><ImWhatsapp /></a>
                   </span>
                   <span>
                     <FaTwitter />

@@ -27,7 +27,10 @@ const CarouselFront = () => {
             />
             <Carousel.Caption>
               <h5>Sunrise Public Senior Secondary School </h5>
-              <p>Founded in 2004, affiliated to CBSE. Affiliation ID is 531455. Address of the school is: Vpo Agon. PIN Code: 122104.</p>
+              <p>
+                Founded in 2004, affiliated to CBSE. Affiliation ID is 531455.
+                Address of the school is: Vpo Agon. PIN Code: 122104.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -39,7 +42,13 @@ const CarouselFront = () => {
             />
             <Carousel.Caption>
               <h5>Extra Currucular Activities</h5>
-              <p>These Activities play a vital role in a student's holistic development. They offer numerous advantages, including skill development, academic improvement, socialization, confidence building, and personal growth, making them an essential component of a well-rounded education.</p>
+              <p>
+                These Activities play a vital role in a student's holistic
+                development. They offer numerous advantages, including skill
+                development, academic improvement, socialization, confidence
+                building, and personal growth, making them an essential
+                component of a well-rounded education.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -51,7 +60,11 @@ const CarouselFront = () => {
             />
             <Carousel.Caption>
               <h5>Our Champions</h5>
-              <p>Our top achievers exemplify our commitment to excellence. We persistently strive to achieve exceptional results, fostering a culture of continuous improvement and outstanding performance.</p>
+              <p>
+                Our top achievers exemplify our commitment to excellence. We
+                persistently strive to achieve exceptional results, fostering a
+                culture of continuous improvement and outstanding performance.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
