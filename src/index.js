@@ -18,8 +18,8 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-if (root.hasChildNodes()) {
-  hydrate(<App/>, root);
-} else {
-  render(<App />, root);
-}
+// if (root.hasChildNodes()) {
+//   hydrate(<App/>, root);
+// } else {
+//   render(<App />, root);
+// }
