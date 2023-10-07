@@ -3,6 +3,38 @@
     align-items: center;
     justify-content: center; 
 }
+.youtube{
+    @include flexprop();
+  @media (max-width:600px){
+    iframe{
+        width: auto;
+        height: 250px;
+    }
+}
+.msg1{
+    &:hover{
+            background-color: #004225 !important;
+            cursor: pointer;
+        }
+}
+.carofront{
+    img{
+        max-height:75vh;
+    }
+}
+}
+@media (max-width:600px) {
+    .carofront{
+        
+       img{
+        min-height: 55vh !important;
+       }
+       .logo{
+        width: 100px;
+        height: 30px;
+    }
+    }
+}
 .princ-msg{
     background-color:#FFC436;
 }
@@ -96,8 +128,8 @@ body{
     .pre{
         
         img{
-            width: 40%;
-            min-height: 40px;
+            width: 150px;
+            height: 140px;
         }
        
         h2{ 
@@ -126,14 +158,26 @@ body{
 @media screen and (max-width: 800px){
 .prenav{
     // flex-direction: column;
-    .pre{
-        h1{
-            font-size: 1rem;
-            span{
-                font-size: .5rem;
-            }
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   .pre{
+    margin: 0px;
+        padding: 0px;
+    img{
+        width: 100px;
+        height: 95px;
+    }
+    h2{
+        min-width:200px;
+        font-size: 1rem;
+        span{
+            font-size: 0.7rem;
         }
     }
+   }
     .pre:nth-child(1){
         img{width: 75%;}
     }
@@ -141,6 +185,11 @@ body{
         display: none;
     }
 }
+}
+@media (max-width:600px) {
+    .prenav{
+
+    }
 }
 .front{
     background: rgba(248, 247, 247, 0.2);

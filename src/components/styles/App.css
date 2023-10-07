@@ -1,3 +1,41 @@
+.youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .youtube iframe {
+    width: auto;
+    height: 250px;
+  }
+}
+
+.youtube .msg1:hover {
+  background-color: #004225 !important;
+  cursor: pointer;
+}
+
+.youtube .carofront img {
+  max-height: 75vh;
+}
+
+@media (max-width: 600px) {
+  .carofront img {
+    min-height: 55vh !important;
+  }
+  .carofront .logo {
+    width: 100px;
+    height: 30px;
+  }
+}
+
 .princ-msg {
   background-color: #FFC436;
 }
@@ -77,8 +115,8 @@ body {
 }
 
 .prenav .pre img {
-  width: 40%;
-  min-height: 40px;
+  width: 150px;
+  height: 140px;
 }
 
 .prenav .pre h2 {
@@ -103,11 +141,32 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .prenav .pre h1 {
+  .prenav {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .prenav .pre {
+    margin: 0px;
+    padding: 0px;
+  }
+  .prenav .pre img {
+    width: 100px;
+    height: 95px;
+  }
+  .prenav .pre h2 {
+    min-width: 200px;
     font-size: 1rem;
   }
-  .prenav .pre h1 span {
-    font-size: .5rem;
+  .prenav .pre h2 span {
+    font-size: 0.7rem;
   }
   .prenav .pre:nth-child(1) img {
     width: 75%;

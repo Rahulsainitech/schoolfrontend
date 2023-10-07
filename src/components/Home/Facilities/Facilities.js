@@ -23,7 +23,7 @@ const Facilities = () => {
         style={{ "min-height": "60vh" }}
       >
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>
@@ -34,7 +34,7 @@ const Facilities = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>
@@ -47,7 +47,7 @@ const Facilities = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>
@@ -58,18 +58,18 @@ const Facilities = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>
             <Card.Title className="mb-2 fs-1 text-center">
               <FaUsers />
             </Card.Title>
-            <Card.Title className="text-center">Top Facility</Card.Title>
+            <Card.Title className="text-center">Top Faculty</Card.Title>
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>
@@ -80,7 +80,7 @@ const Facilities = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "9rem", height: "10rem" }}
           className="m-1 f-card"
         >
           <Card.Body>

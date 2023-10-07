@@ -6,6 +6,7 @@ import image3 from "../img/3.jpg";
 import image4 from "../img/4.jpg";
 import Logo from "../styles/logo.png";
 import { Image } from "react-bootstrap";
+import "../styles/App.css"
 
 const CarouselFront = () => {
   return (
@@ -16,9 +17,10 @@ const CarouselFront = () => {
           display: "block",
           overflow: "hidden",
         }}
+       
       >
         <Carousel fade>
-          <Carousel.Item>
+          <Carousel.Item className="carofront">
             <img
               className="d-block w-100"
               style={{ maxHeight: "75vh" }}
@@ -33,7 +35,7 @@ const CarouselFront = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="carofront">
             <img
               className="d-block w-100"
               style={{ maxHeight: "75vh" }}
@@ -51,7 +53,7 @@ const CarouselFront = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="carofront">
             <img
               className="d-block w-100"
               style={{ maxHeight: "75vh" }}
@@ -67,15 +69,15 @@ const CarouselFront = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="carofront">
             <img
               className="d-block w-100"
               style={{ maxHeight: "75vh" }}
               src={image4}
               alt="First slide"
             />
-            <Carousel.Caption className="front">
-              <Image src={Logo} />
+            <Carousel.Caption className="carofront front">
+              <Image src={Logo} className="logo" />
               <h3>Sunrise Public Sr. Secondary School</h3>
               <address>Agon,Firozepur Jhirka, Dist-Nuh 122104,Haryana</address>
             </Carousel.Caption>

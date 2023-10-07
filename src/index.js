@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { hydrate,render } from "react-dom";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -17,3 +18,8 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+if (root.hasChildNodes()) {
+  hydrate(<App/>, root);
+} else {
+  render(<App />, root);
+}

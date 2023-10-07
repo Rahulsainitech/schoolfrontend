@@ -28,7 +28,7 @@ const Navbar1 = () => {
               <NavDropdown title={"About"} id="basic-nav-dropdown">
                 <NavDropdown.Item className="m-0">
                   {" "}
-                  <NavLink to="/about/school" className="nav-link">
+                  <NavLink to="/about/" className="nav-link">
                     <FaSchool />
                     &nbsp;School
                   </NavLink>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import "../styles/App.css"
 
 const Director = () => {
   return (

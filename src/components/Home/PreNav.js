@@ -1,25 +1,26 @@
 import React from "react";
 import Logo from "../styles/logo.png";
 import "../styles/App.css";
+import { Col, Row } from "react-bootstrap";
 
 const PreNav = () => {
   return (
     
-        <div className="prenav">
-          <div className="pre col-3 col-md-3">
-            <img src={Logo} alt="logo" style={{height:"140px",width:'150px'}} />
-          </div>
-          <div className="pre col-md-9 col-9">
+        <Row className="prenav">
+          <Col className="pre p-sm-0 mx-sm-0" xs={3} md={3}>
+            <img src={Logo} alt="logo"  />
+          </Col>
+          <Col className="pre" xs={9} md={6}>
             <h2 className="text-center">
               Sunrise Public Sr. Secondary School
               <br />{" "}
-              <span className="display-4 col-12 text-center">
+              <span className="col-12 text-center">
                 {" "}
                 We believe in excellence
               </span>
             </h2>
-          </div>
-          <div className="pre col-md-3">
+          </Col>
+          <Col className="pre" xs={0} md={3}>
             <address>
               <span>
                 <i className="fas fa-phone-square-alt"></i>Contact us
@@ -33,8 +34,8 @@ const PreNav = () => {
               <br />
               Email:spsssagon@gmail.com
             </address>
-          </div>
-        </div>
+          </Col>
+        </Row>
       
   );
 };

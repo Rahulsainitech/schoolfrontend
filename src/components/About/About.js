@@ -39,7 +39,7 @@ const About = () => {
             <Col md={7} xs={12}>
               <h5 className="text-center">About Sunrise</h5>
               <p>
-                <strong>SUNRISE PUBLIC HIGH SCHOOL </strong>AGON was established
+                <strong>SUNRISE PUBLIC SR. SECONDARY HIGH SCHOOL </strong>AGON was established
                 in 2004 and it is managed by the Pvt. Unaided. It is located in
                 Rural area. It is located in F.P.JHIRKA block of MEWAT district
                 of HARYANA. The school consists of Grades from 1 to 12. The
@@ -54,9 +54,9 @@ const About = () => {
                 activities. The school has a separate room for Head
                 master/Teacher.The school has have electric connection. The
                 school has 7 boys toilet and it is functional. and 3 girls
-                toilet and it is functional. The school has no playground. The
+                toilet and it is functional. The school has a big playground including basket ball, football, volleyball, kho-kho playground. The
                 school has a library and has 3500 books in its library. The
-                school does not need ramp for disabled children to access
+                school have dedicated ramp for disabled children to access
                 classrooms. The school has dedicated computer lab for teaching and learning
                 purposes and all are functional. The school is Not Applicable
                 providing mid-day meal.
@@ -65,13 +65,13 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <hr />
       <MissionVision />
-      <h5 className="text-center my-2">Our Alumani</h5>
+      <hr />
+      <h5 className="text-center my-2 p-3">Our Alumani</h5>
       <Alumani />
       <hr />
       <Container>
-        <h4 className="text-center text-success faculty py-5">Our Faculties</h4>
+        <h5 className="text-center text-success faculty py-5">Our Faculties</h5>
         <DiamondGallery />
       </Container>
     </div>

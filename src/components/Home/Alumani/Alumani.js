@@ -8,6 +8,7 @@ const Alumani = () => {
       display:"flex"
     }} 
     >
+    
       <Carousel
         slide={false}
         style={{ background: "#FCDDB0" }}

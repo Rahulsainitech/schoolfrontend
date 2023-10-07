@@ -48,7 +48,7 @@ const Home = () => {
               }}
             >
               <Col xs={10} md={5}>
-                <Card style={{background:"#FBBC04"}}>
+                <Card style={{background:"#FBBC04"}} className="msg1">
                   <Card.Img
                     style={{
                       width: "12rem",
@@ -83,7 +83,7 @@ const Home = () => {
                 </Card>
               </Col>
               <Col xs={10} md={5}>
-                <Card style={{background:"#E37400"}}>
+                <Card style={{background:"#E37400"}} className="msg2">
                   <Card.Img
                     style={{
                       width: "12rem",
@@ -156,7 +156,7 @@ const Home = () => {
       <div >
         <Container className="my-2">
           <Row>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} className="youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/P_NPNqJnbos?si=7jj-UUuK_CBhn1t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               {/* <Card.Img
                 src="https://media.istockphoto.com/id/171306436/photo/red-brick-high-school-building-exterior.jpg?s=612x612&w=0&k=20&c=vksDyCVrfCpvb9uk4-wcBYu6jbTZ3nCOkGHPSgNy-L0="
